@@ -1,4 +1,30 @@
 <div class="formContainer">
     <h3>Add new song</h3>
-    <form #songForm="ngForm" (ngSubmit)="submitter(songForm)"></form>
+    <form #songForm="ngForm" (ngSubmit)="submitter(songForm)">
+        <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="songService.selectedSong._id" />
+        <div class="inputArea">
+            <label for="title">TITLE</label>
+            <input type="text" name="title" placeholder="Enter a title..." #name="ngModel" [(ngModel)]="songService.selectedSong.title" />
+        </div>
+        <div class="inputArea">
+            <label for="artist">ARTIST</label>
+            <input type="text" name="artist" placeholder="Enter the artist..." #name="ngModel" [(ngModel)]="songService.selectedSong.artist" />
+        </div>
+        <div class="inputArea">
+            <label for="year">YEAR</label>
+            <input type="text" name="year" placeholder="Enter the year..." #name="ngModel" [(ngModel)]="songService.selectedSong.year" />
+        </div>
+        <div class="inputArea">
+            <label for="language">LANGUAGE</label>
+            <input type="text" name="language" placeholder="Enter the language..." #name="ngModel" [(ngModel)]="songService.selectedSong.language" />
+        </div>
+        <div class="inputArea">
+            <label for="genre">GENRE</label>
+            <input type="text" name="genre" placeholder="Enter the genre..." #name="ngModel" [(ngModel)]="songService.selectedSong.genre" />
+        </div>
+        <div class="buttonArea">
+            <button type="button" (click)="resetter(songForm)">RESET</button>
+            <button type="submit">SAVE</button>
+        </div>
+    </form>
 </div>

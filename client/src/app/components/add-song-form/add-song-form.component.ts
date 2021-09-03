@@ -1,16 +1,38 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from "@angular/forms";
+
+import { SongService } from "../../services/song.service";
+import { Song } from "../../services/song.model";
+
+declare var M: any;
 
 @Component({
   selector: 'app-add-song-form',
   templateUrl: './add-song-form.component.html',
-  styleUrls: ['./add-song-form.component.css']
+  styleUrls: ['./add-song-form.component.css'],
+  providers: [SongService]
 })
 export class AddSongFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public songService: SongService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {
+    this.resetter();
+  };
+
+  resetter(form?: NgForm) {
+    if (form) {
+      form.reset();
+    };
+    this.songService.selectedSong = {
+      _id: "",
+      title: "",
+      artist: "",
+      year: "",
+      language: "",
+      genre: ""
+    };
+  };
 
   submitter(songForm: any) {
     console.log(songForm);
