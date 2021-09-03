@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AddSongFormComponent } from './components/add-song-form/add-song-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {path: "", component: HomeComponent}
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    AddSongFormComponent
+    AddSongFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
