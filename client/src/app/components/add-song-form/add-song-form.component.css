@@ -1,0 +1,15 @@
+.formContainer {
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+.formContainer h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}

@@ -12,4 +12,8 @@ export class AddSongFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submitter(songForm: any) {
+    console.log(songForm);
+  };
+
 }
