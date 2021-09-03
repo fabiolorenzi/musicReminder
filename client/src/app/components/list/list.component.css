@@ -61,3 +61,33 @@ td {
 .genreTab {
     width: 120px;
 }
+
+.editTab button {
+    display: block;
+    width: 65px;
+    background-color: #3cff00;
+    color: #000000;
+    border: 1px solid #000000;
+    transition-duration: 0.5s;
+}
+
+.editTab button:hover {
+    background-color: #000fff;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.deleteTab button {
+    display: block;
+    width: 65px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    transition-duration: 0.5s;
+}
+
+.deleteTab button:hover {
+    background-color: #00eeff;
+    color: #000000;
+    transition-duration: 0.5s;
+}
