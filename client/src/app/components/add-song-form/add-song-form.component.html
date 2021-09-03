@@ -23,8 +23,8 @@
             <input type="text" name="genre" placeholder="Enter the genre..." #name="ngModel" [(ngModel)]="songService.selectedSong.genre" />
         </div>
         <div class="buttonArea">
-            <button type="button" (click)="resetter(songForm)">RESET</button>
-            <button type="submit">SAVE</button>
+            <button id="resetButton" type="button" (click)="resetter(songForm)">RESET</button>
+            <button id="saveButton" type="submit">SAVE</button>
         </div>
     </form>
 </div>
