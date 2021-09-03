@@ -4,8 +4,6 @@ import { NgForm } from "@angular/forms";
 import { SongService } from "../../services/song.service";
 import { Song } from "../../services/song.model";
 
-declare var M: any;
-
 @Component({
   selector: 'app-add-song-form',
   templateUrl: './add-song-form.component.html',

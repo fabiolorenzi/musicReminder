@@ -70,7 +70,7 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
     if (!ObjectId.isValid(req.params.id)) {
-        console.log("Song not found for delete!");
+        return res.status(400).send("Song not found for delete!");
     };
 
     Song.findByIdAndRemove(req.params.id, (err, doc) => {

@@ -19,7 +19,7 @@
                     <td>{{song.language}}</td>
                     <td>{{song.genre}}</td>
                     <td class="editTab"><button>Edit</button></td>
-                    <td class="deleteTab"><button>Delete</button></td>
+                    <td class="deleteTab"><button (click)="onDelete(song._id, song.title, song.artist)">Delete</button></td>
                 </tr>
             </tbody>
         </table>
