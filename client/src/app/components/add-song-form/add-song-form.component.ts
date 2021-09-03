@@ -34,8 +34,11 @@ export class AddSongFormComponent implements OnInit {
     };
   };
 
-  submitter(songForm: any) {
-    console.log(songForm);
+  submitter(form: NgForm) {
+    this.songService.postSong(form.value).subscribe(res => {
+      this.resetter();
+      alert("The song has been added successfully!");
+    });
   };
 
 }
