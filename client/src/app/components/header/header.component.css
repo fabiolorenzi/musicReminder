@@ -3,11 +3,12 @@
     width: 100%;
     justify-content: space-around;
     background-color: transparent;
+    position: absolute;
 }
 
 .header a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     padding: 20px 0;
