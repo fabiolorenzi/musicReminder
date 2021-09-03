@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+    transition-duration: 0.3s;
+}
+
+.header a:hover {
+    color: #fbff00;
+    transition-duration: 0.3s;
+}
+
+.active {
+    color: #fbff00 !important;
+}
