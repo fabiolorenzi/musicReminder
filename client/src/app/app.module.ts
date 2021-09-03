@@ -9,9 +9,11 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AddSongFormComponent } from './components/add-song-form/add-song-form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ListComponent } from './components/list/list.component';
 
 const appRoutes: Routes = [
-  {path: "", component: HomeComponent}
+  {path: "", component: HomeComponent},
+  {path: "list", component: ListComponent}
 ];
 
 @NgModule({
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HeaderComponent,
     AddSongFormComponent,
-    FooterComponent
+    FooterComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
