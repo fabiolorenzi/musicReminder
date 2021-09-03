@@ -1,0 +1,36 @@
+.aboutContainer {
+    display: block;
+    background-color: #ffffff;
+    background-image: url("../../../assets/background_image.jpg");
+    width: 100%;
+    padding-top: 10px;
+}
+
+.aboutContainer h1 {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 120px;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+}
+
+.aboutBody {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    background-color: #00000060;
+}
+
+.aboutBody h3 {
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.aboutBody img {
+    display: block;
+    width: 450px;
+    margin: auto;
+    padding: 60px 0 100px;
+}
