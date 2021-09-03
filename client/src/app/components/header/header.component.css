@@ -18,8 +18,11 @@
 .header a:hover {
     color: #fbff00;
     transition-duration: 0.3s;
+    font-size: 22px;
 }
 
 .active {
     color: #fbff00 !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 5px !important;
 }
