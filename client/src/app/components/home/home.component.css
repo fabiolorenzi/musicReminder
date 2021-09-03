@@ -14,3 +14,10 @@
     font-size: 40px;
     letter-spacing: 0.3em;
 }
+
+.homeForm {
+    display: block;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
