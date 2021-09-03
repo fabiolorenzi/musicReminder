@@ -1,1 +1,25 @@
-<div class="listContainer"></div>
+<div class="listContainer">
+    <h1>List of your songs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Language</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let song of songService.songs">
+                <td>{{song.title}}</td>
+                <td>{{song.artist}}</td>
+                <td>{{song.year}}</td>
+                <td>{{song.language}}</td>
+                <td>{{song.genre}}</td>
+                <td><button>Edit</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

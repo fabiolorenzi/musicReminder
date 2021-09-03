@@ -1,0 +1,26 @@
+.listContainer {
+    display: block;
+    background-color: #ffffff;
+    background-image: url("../../../assets/background_image.jpg");
+    width: 100%;
+    padding-top: 10px;
+}
+
+.listContainer h1 {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 120px;
+    font-size: 40px;
+    letter-spacing: 0.18em;
+}
+
+table {
+    display: block;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
