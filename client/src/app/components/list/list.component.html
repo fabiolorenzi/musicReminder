@@ -15,9 +15,9 @@
                 <tr *ngFor="let song of songService.songs">
                     <td>{{song.title}}</td>
                     <td>{{song.artist}}</td>
-                    <td>{{song.year}}</td>
-                    <td>{{song.language}}</td>
-                    <td>{{song.genre}}</td>
+                    <td class="yearData">{{song.year}}</td>
+                    <td class="langData">{{song.language}}</td>
+                    <td class="genreData">{{song.genre}}</td>
                     <td class="editTab"><button>Edit</button></td>
                     <td class="deleteTab"><button (click)="onDelete(song._id, song.title, song.artist)">Delete</button></td>
                 </tr>

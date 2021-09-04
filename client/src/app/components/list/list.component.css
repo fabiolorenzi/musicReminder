@@ -91,3 +91,15 @@ td {
     color: #000000;
     transition-duration: 0.5s;
 }
+
+.yearData {
+    text-align: center;
+}
+
+.langData {
+    text-align: center;
+}
+
+.genreData {
+    text-align: center;
+}
