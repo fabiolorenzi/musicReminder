@@ -49,4 +49,17 @@ export class ListComponent implements OnInit {
     };
   };
 
+  submitterToUpdate(form: NgForm) {
+    this.songService.putSong(form.value).subscribe(res => {
+      this.resetter();
+      alert("The song has been updated successfully!");
+      this.resetter(form);
+      this.refreshData();
+    });
+  };
+
+  onEdit(song: Song) {
+    this.songService.selectedSong = song;
+  };
+
 }

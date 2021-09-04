@@ -103,3 +103,83 @@ td {
 .genreData {
     text-align: center;
 }
+
+.updateForm {
+    display: block;
+    width: 400px;
+    margin: auto;
+    background-color: #000000d0;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+.updateForm h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.updateForm form {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputArea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputArea label {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.inputArea input {
+    float: right;
+    width: 250px;
+    margin-top: -4px;
+    margin-right: 20px;
+}
+
+.buttonArea {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.buttonArea button {
+    display: block;
+    width: 100px;
+    height: 32px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#resetButton {
+    background-color: #ff0000;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+#resetButton:hover {
+    background-color: #00eeff;
+    color: #000000;
+    transition-duration: 0.5s;
+}
+
+#saveButton {
+    background-color: #09ff00;
+    color: #000000;
+    transition-duration: 0.5s;
+}
+
+#saveButton:hover {
+    background-color: #000fff;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}

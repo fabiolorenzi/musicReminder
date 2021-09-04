@@ -1,5 +1,35 @@
 <div class="listContainer">
     <h1>List of your songs</h1>
+    <div class="updateForm">
+        <h3>Update the song here</h3>
+        <form #songForm="ngForm" (ngSubmit)="submitterToUpdate(songForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="songService.selectedSong._id" />
+            <div class="inputArea">
+                <label for="title">TITLE</label>
+                <input type="text" name="title" placeholder="Enter a title..." #name="ngModel" [(ngModel)]="songService.selectedSong.title" />
+            </div>
+            <div class="inputArea">
+                <label for="artist">ARTIST</label>
+                <input type="text" name="artist" placeholder="Enter the artist..." #name="ngModel" [(ngModel)]="songService.selectedSong.artist" />
+            </div>
+            <div class="inputArea">
+                <label for="year">YEAR</label>
+                <input type="text" name="year" placeholder="Enter the year..." #name="ngModel" [(ngModel)]="songService.selectedSong.year" />
+            </div>
+            <div class="inputArea">
+                <label for="language">LANGUAGE</label>
+                <input type="text" name="language" placeholder="Enter the language..." #name="ngModel" [(ngModel)]="songService.selectedSong.language" />
+            </div>
+            <div class="inputArea">
+                <label for="genre">GENRE</label>
+                <input type="text" name="genre" placeholder="Enter the genre..." #name="ngModel" [(ngModel)]="songService.selectedSong.genre" />
+            </div>
+            <div class="buttonArea">
+                <button id="resetButton" type="button" (click)="resetter(songForm)">RESET</button>
+                <button id="saveButton" type="submit">UPDATE</button>
+            </div>
+        </form>
+    </div>
     <div class="tableContainer">
         <table>
             <thead>
@@ -18,7 +48,7 @@
                     <td class="yearData">{{song.year}}</td>
                     <td class="langData">{{song.language}}</td>
                     <td class="genreData">{{song.genre}}</td>
-                    <td class="editTab"><button>Edit</button></td>
+                    <td class="editTab"><button (click)="onEdit(song)">Edit</button></td>
                     <td class="deleteTab"><button (click)="onDelete(song._id, song.title, song.artist)">Delete</button></td>
                 </tr>
             </tbody>
